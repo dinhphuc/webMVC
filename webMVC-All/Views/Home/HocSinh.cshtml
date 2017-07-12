@@ -1,0 +1,60 @@
+﻿@{
+    Layout = null;
+}
+@using webMVC_All.Models;
+
+
+
+
+@{
+    List<HocSinh> listDataHS = (List<HocSinh>)ViewData["listDataHS"];
+
+}
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>HocSinh</title>
+    <!--bootstrap-->
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet" />
+    <script src="~/Scripts/jquery.min.js"></script>
+    <script src="~/Scripts/bootstrap.min.js"></script>
+    <!--End bootstrap-->
+    <script src="~/Scripts/JsItem.js"></script>
+    <link href="~/Content/style.css" rel="stylesheet" />
+
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>HSID</th>
+                        <th>Họ Tên</th>
+                        <th>Quê Quán</th>
+                        <th>Chức Năng  <a href="/Home/GDThemSua/">        Thêm <span class="glyphicon glyphicon-plus"></span></a></th>
+                       
+                    </tr>
+                </thead>
+                <tbody>
+                    @{
+                        foreach (HocSinh HS in listDataHS)
+                        {
+                            <tr>
+                                <td>@HS.HSID</td>
+                                <td>@HS.Name</td>
+                                <td>@HS.QQ</td>
+                                <td> <a href="#">Sửa |  </a><a href="#">   Xóa</a> </td>
+                            </tr>
+
+                        }
+                    }
+                </tbody>
+
+            </table>
+        </div>
+    </div>
+</body>
+</html>

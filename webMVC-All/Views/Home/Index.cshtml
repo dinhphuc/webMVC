@@ -1,0 +1,180 @@
+﻿@using webMVC_All.Models;
+<link href="~/Content/style.css" rel="stylesheet" />
+<link href="~/Content/bootstrap-theme.min.css" rel="stylesheet" />
+<link href="~/Content/bootstrap.min.css" rel="stylesheet" />
+<script src="~/Scripts/bootstrap.min.js"></script>
+<script src="~/Scripts/jquery.min.js"></script>
+@{
+    ViewBag.Title = "Trang Chủ";
+    Layout = "~/Views/Shared/_Home.cshtml";
+}
+
+@{
+    List<Item> listData = (List<Item>)ViewData["listData"];
+    int IDclick = 5;
+}
+
+
+
+
+
+
+<img src="" />
+<div class="row">
+    <ol class="breadcrumb" style="padding:20px 0px 10px 20px">
+        <li><a href="/Home">Home</a></li>
+        <li class="active">Điện thoại di động</li>
+    </ol>
+    @{
+
+        if (listData == null)
+        {
+            <center><h3> Dữ Liệu Trống </h3></center>
+        }
+        else
+        {
+            foreach (Item IT in listData)
+            {
+                <div class="col-sm-4 col-md-3">
+                    <div class="thumbnail">
+                        <div class="thumbnail_overlay">
+                            <a href="/Home/Item?id=@IT.ItemID" target="_blank">
+                                <img src="@IT.LinkImg" alt="@IT.NameItem" class="image">
+                                <div class="overlay">
+                                   
+                                </div>
+                            </a>
+                        </div>
+                        <div class="caption">
+
+                            <h3 style="text-align:center">@IT.NameItem</h3>
+                            <p style="color: red; font-family: Arial;text-align:center">Giá: @IT.Pride Đ</p>
+                            <p style="text-align:center">
+                                <button class="btn btn-primary " role="button" data-target="#cartMD" data-toggle="modal">
+                                    <span class="glyphicon glyphicon-shopping-cart">
+                                    </span>
+                                    Add to cart
+                                </button>
+                                <a href="/Home/Item?id=@IT.ItemID" target="_blank" class="btn btn-default" role="button">
+                                    <span class="glyphicon glyphicon-search"></span> xem chi tiết
+                                </a>
+                            </p>
+                        </div>
+
+
+                    </div>
+                </div>
+            }
+        }
+
+    }
+
+</div>
+<!--modal-->
+@{
+
+    ItemRespont rs = new ItemRespont();
+    Item it = rs.GetDataByID(IDclick);
+}
+
+
+
+@{
+    <div class="modal fade" id="cartMD" role="dialog">
+        <div class="modal-dialog modal-md">
+            <div class="modal-content">
+                <div class="modal-header" style="text-align:center;background:#ff6a00">
+                    <button type="button" class="close" data-dismiss="modal">
+                        &times;
+                    </button>
+                    <h4 class="modal-title">
+                        <span class=" glyphicon glyphicon-shopping-cart"></span>
+                        Add To Cart
+                    </h4>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <!-- End Item info -->
+                            <div class="thumbnail" style="text-align:center">
+
+                                <a href="/Home/Item?id=@it.ItemID" target="_blank">
+                                    <img src="@it.LinkImg" alt="@it.NameItem">
+                                </a>
+                                <div class="caption">
+                                    <h3>@it.NameItem</h3>
+                                    <p style="color:red;font-family:Arial">Giá: @it.Pride Đ</p>
+                                    <p>
+                                        <a href="/Home/Item?id=@it.ItemID" target="_blank" class="btn btn-default" role="button">
+                                            <span class="glyphicon glyphicon-search"></span> xem chi tiết
+                                        </a>
+                                    </p>
+                                </div>
+                            </div>
+                            <!-- End Item info -->
+                        </div>
+                        <div class="col-md-8">
+                            <p style="margin: 5px;"> Use Name:</p>
+                            <div class="input-group">
+                                <span class="input-group-addon" id="sizing-addon2"><i class="glyphicon glyphicon-user"></i></span>
+                                <input type="text" class="form-control" placeholder="Username" aria-describedby="sizing-addon2">
+                            </div>
+                            <p style="margin: 5px;">Your email:</p>
+                            <div class="input-group">
+                                <span class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span>
+                                <input id="email" type="text" class="form-control" name="email" placeholder="Email">
+                            </div>
+                            <p style="margin: 5px;">Your Phone Number:</p>
+                            <div class="input-group">
+                                <span class="input-group-addon"><i class="glyphicon glyphicon-phone"></i></span>
+                                <input id="msg" type="text" class="form-control" name="msg" placeholder="Your Phone Number">
+                            </div>
+                            <p style="margin: 5px;">Your Adress:</p>
+                            <div class="input-group">
+                                <span class="input-group-addon"><i class="glyphicon glyphicon-home"></i></span>
+                                <input id="msg" type="text" class="form-control" name="msg" placeholder="Your Adress">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-success" data-dismiss="modal">
+                        <i class="glyphicon glyphicon-shopping-cart"></i>
+                        submit
+                    </button>
+                    <button type="button" class="btn btn-warning" data-dismiss="modal">
+                        <i class="glyphicon glyphicon-remove"></i>
+                        Cancel
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+}
+@*<div>
+    <nav aria-label="Page navigation">
+        <ul class="pagination">
+            <li>
+                <a href="#" aria-label="Previous">
+                    <span aria-hidden="true">&laquo;</span>
+                </a>
+            </li>
+            <li><a href="#">1</a></li>
+            <li><a href="#">2</a></li>
+            <li><a href="#">3</a></li>
+            <li><a href="#">4</a></li>
+            <li><a href="#">5</a></li>
+            <li>
+                <a href="#" aria-label="Next">
+                    <span aria-hidden="true">&raquo;</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</div>*@
+@*<script type="text/javascript">
+        function Call(id) {
+            $("#cartMD").modal("show");
+        }
+    </script>*@
+

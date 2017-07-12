@@ -1,0 +1,195 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+
+
+    <link href="~/Content/bootstrap-theme.min.css" rel="stylesheet" />
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet" />
+    <script src="~/Scripts/bootstrap.min.js"></script>
+    <script src="~/Scripts/jquery.min.js"></script>
+
+    
+</head>
+<body>
+    <div class="container" style="background: #f0f0f0">
+        <div class="row">
+            <nav class="navbar navbar-default navbar-static-top" role="navigation">
+                <div class="container-fluid">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse-1">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand" href="/Home/Index">seakBz.Net</a>
+                    </div>
+
+                    <div class="collapse navbar-collapse" id="navbar-collapse-1" style="background:#ffffff;">
+                        <ul class="nav navbar-nav" style="color:#000000">
+                            <li class="active">
+                                <a href="/Home/Index">Trang Chủ</a>
+                            </li>
+
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                    Điện Thoại Di Động<span class="caret"></span>
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#" class="Apple">Apple</a></li>
+                                    <li><a href="#" class="Samsung">Samsung</a></li>
+                                    <li><a href="#" class="Oppo">Oppo</a></li>
+                                    <li><a href="#" class="Sony">Sony</a></li>
+                                    <li><a href="#" class="Nokia">Nokia</a></li>
+                                    <li><a href="#" class="HTC">HTC</a></li>
+                                    <li><a href="#" class="LG">LG</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                    Laptop<span class="caret"></span>
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#" class="Asus">Asus</a></li>
+                                    <li><a href="#" class="Dell">Dell</a></li>
+                                    <li><a href="#" class="Apple">Apple</a></li>
+                                </ul>
+
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                    Phụ Kiện<span class="caret"></span>
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#" class="USB">USB</a></li>
+                                    <li><a href="#" class="Mouse">Chuột</a></li>
+                                    <li><a href="#" class="Pin">Pin</a></li>
+                                    <li><a href="#" class="HeadPhone">Tai Nghe</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                    Liên Hệ<span class="caret"></span>
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="https://www.facebook.com/sea.kBz" target="_blank" class="FB">Facebook</a></li>
+                                    <li><a href="Email: Minhphucpk.1997@gmail.com" target="_blank" class="Gmail">Gmail</a></li>
+                                    <li><a href="tel: 0973642632" class="Phone" target="_blank">Phone</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <!-- search -->
+                        <form action="/search.html" class="navbar-form navbar-left" style="margin:12px 1px 8px 1px">
+                            <input type="text" placeholder="Search here..." required="">
+                            <button type="submit">Search</button>
+
+                        </form>
+                        <ul class="nav navbar-nav navbar-right bdr">
+                            <li><a href="/signup">Sign Up</a></li>
+                            <li class="divider-vertical"></li>
+                            <li class="dropdown">
+                                <a class="dropdown-toggle" href="#" data-toggle="dropdown">
+                                    <span class="glyphicon glyphicon-user"></span>  Sign In <strong class="caret"></strong>
+                                </a>
+                                <div class="dropdown-menu" style="padding: 20px; padding-bottom: 25px;">
+                                    <form method="post" action="login" accept-charset="UTF-8">
+                                        <input style="margin-bottom: 15px;" type="text" placeholder="Username" id="username" name="username">
+                                        <input style="margin-bottom: 15px;" type="password" placeholder="Password" id="password" name="password">
+                                        <input style="float: left; margin-right: 10px;" type="checkbox" name="remember-me" id="remember-me" value="1">
+                                        <label class="string optional" for="user_remember_me"> Remember me</label>
+                                        <input class="btn btn-primary btn-block" type="submit" id="sign-in" value="Sign In">
+                                        <label style="text-align:center;margin-top:5px">or</label>
+                                        <input class="btn btn-primary btn-block" type="button" id="sign-in-google" value="Sign In with Google">
+                                        <input class="btn btn-primary btn-block" type="button" id="sign-in-twitter" value="Sign In with Twitter">
+                                    </form>
+                                </div>
+                            </li>
+                        </ul>
+
+                    </div>
+                    <!-- end .menu -->
+
+                </div>
+            </nav>
+        </div>
+        <!-- slide and right -->
+        <div class="row">
+            <!--slide -->
+            <div class="col-sm-8 col-md-8 col-xs-12">
+                <div class="slide">
+                    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                        <!-- Indicators -->
+                        <ol class="carousel-indicators">
+                            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                            <li data-target="#myCarousel" data-slide-to="1"></li>
+                            <li data-target="#myCarousel" data-slide-to="2"></li>
+                            <li data-target="#myCarousel" data-slide-to="3"></li>
+                        </ol>
+
+                        <!-- Wrapper for slides -->
+                        <div class="carousel-inner">
+                            <div class="item active">
+                                <a href="#" target="_blank">
+                                    <img src="~/imgItem/Slide2.png" alt="Sony Xpiara" style="width: 790px; height: 300px;">
+                                </a>
+                            </div>
+
+                            <div class="item">
+                                <a href="#" target="_blank">
+                                    <img src="~/imgItem/Slide3.png" alt="Chicago" style="width: 790px; height: 300px; ">
+                                </a>
+                            </div>
+
+                            <div class="item">
+                                <a href="#" target="_blank">
+                                    <img src="~/imgItem/Slide4.png" alt="New york" style="width: 790px; height: 300px; ">
+                                </a>
+                            </div>
+                            <div class="item">
+                                <a href="#" target="_blank">
+                                    <img src="~/imgItem/Slide5.png" alt="New york" style="width: 790px; height: 300px; ">
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- Left and right controls -->
+                        <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                            <span class="glyphicon glyphicon-chevron-left"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                            <span class="glyphicon glyphicon-chevron-right"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!--right slide -->
+            <div class="col-sm-4 col-md-4 col-xs-12">
+                <div class="list-group">
+                    <a href="#" class="list-group-item active">
+                        <h4 class="list-group-item-heading">List group item heading</h4>
+                        <p class="list-group-item-text">...</p>
+                    </a>
+                    <a href="#" class="list-group-item">
+                        <h4 class="list-group-item-heading">List group item heading</h4>
+                        <p class="list-group-item-text">...</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <!--Content -->
+        @RenderBody()
+        <!-- End Content -->
+        <!-- Footer -->
+        <div class="row">
+            <div class="footer">
+
+            </div>
+        </div>
+    </div>
+</body>
+</html>

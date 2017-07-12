@@ -1,0 +1,176 @@
+﻿@using webMVC_All.Models;
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Areas/Admin/Views/Shared/_AdminHome.cshtml";
+}
+@{
+    List<Item> listData = (List<Item>)ViewData["listData"];
+}
+<link href="~/Content/font-awesome.min.css" rel="stylesheet" />
+
+@{
+    <div class="box">
+        <div class="box-header">
+            <div class="row">
+                <div class="col-sm-8">
+                    <h3 class="box-title">Data</h3>
+                </div>
+                <div class="col-sm-4">
+                    <i class="fa fa-search"></i> Seach: <input type="text" id="InputData" onkeyup="SeachFunction()" placeholder="Search for names..">
+                </div>
+            </div>
+
+        </div>
+        <div class="box-body">
+            <table id="tableData" class="table table-bordered table-striped">
+                <thead>
+                    <tr role="row">
+
+                        <th onclick="sortTable(0)">   ID <i class="fa fa-sort-numeric-asc"></i></th>
+                        <th onclick="sortTable(1)">NameItem    <i class="fa fa-sort-alpha-asc"></i></th>
+                        <th onclick="sortTable(2)">Pride    <i class="fa fa-sort-alpha-asc"></i></th>
+                        <th onclick="sortTable(3)">Brand   <i class="fa fa-sort-alpha-asc"></i></th>
+                        <th onclick="sortTable(4)">LinkImg   <i class="fa fa-sort-alpha-asc"></i></th>
+                        <th onclick="sortTable(5)">Cam  <i class="fa fa-sort-alpha-asc"></i></th>
+                        <th onclick="sortTable(6)">RAM  <i class="fa fa-sort-alpha-asc"></i></th>
+                        <th onclick="sortTable(7)">ScreenSize  <i class="fa fa-sort-alpha-asc"></i></th>
+                        <th onclick="sortTable(8)">Processor   <i class="fa fa-sort-alpha-asc"></i></th>
+                        <th onclick="sortTable(9)">RAM  <i class="fa fa-sort-alpha-asc"></i></th>
+                        <th onclick="sortTable(10)">Total  <i class="fa fa-sort-alpha-asc"></i></th>
+                        <th >Tool  <i class="fa fa-sort-alpha-asc"></i></th>
+                    </tr>
+                </thead>
+                <tbody>
+
+                    @foreach (Item IT in listData)
+                    {
+                        <tr>
+                            <td>@IT.ItemID</td>
+                            <td>@IT.NameItem</td>
+                            <td>@IT.Pride</td>
+                            <td>@IT.Brand</td>
+                            <td>@IT.LinkImg</td>
+                            <td>@IT.CameraResolution</td>
+                            <td>@IT.RAM</td>
+                            <td>@IT.ScreenSize</td>
+                            <td>@IT.Processor</td>
+                            <td>@IT.RAM</td>
+                            <td>@IT.Total</td>
+                            <th><a data-toggle="modal" onclick="Call(@IT.ItemID)">Sửa|</a><a href="#">Xóa</a></th>
+                        </tr>
+                    }
+            </table>
+        </div>
+    </div>
+
+}
+
+
+
+<!-- Modal -->
+<div class="modal fade" id="ModalEdit" role="dialog">
+    <div class="modal-dialog">
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">Modal Header</h4>
+            </div>
+            <div class="modal-body">
+                @{
+                    ItemRespont rs = new ItemRespont();
+                    Item it = rs.GetDataByID(5);
+                }
+
+                <p>Some text in the modal.</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+
+    </div>
+</div>
+<script>
+    function SeachFunction() {
+        var input, filter, table, tr, td, i;
+        input = document.getElementById("InputData");
+        filter = input.value.toUpperCase();
+        table = document.getElementById("tableData");
+        tr = table.getElementsByTagName("tr");
+
+        for (i = 0; i < tr.length; i++) {       
+            td = tr[i].getElementsByTagName("td")[1];
+            if (td) {
+                if (td.innerHTML.toUpperCase().indexOf(filter) > -1) {
+                    tr[i].style.display = "";
+                } else {
+                    tr[i].style.display = "none";
+                }
+            }
+        }
+    }
+</script>
+
+<script>
+    function sortTable(n) {
+        var table, rows, switching, i, x, y, shouldSwitch, dir, switchcount = 0;
+        table = document.getElementById("tableData");
+        switching = true;
+        //Set the sorting direction to ascending:
+        dir = "asc";
+        /*Make a loop that will continue until
+        no switching has been done:*/
+        while (switching) {
+            //start by saying: no switching is done:
+            switching = false;
+            rows = table.getElementsByTagName("tr");
+            /*Loop through all table rows (except the
+            first, which contains table headers):*/
+            for (i = 1; i < (rows.length - 1) ; i++) {
+                //start by saying there should be no switching:
+                shouldSwitch = false;
+                /*Get the two elements you want to compare,
+                one from current row and one from the next:*/
+                x = rows[i].getElementsByTagName("td")[n];
+                y = rows[i + 1].getElementsByTagName("td")[n];
+                /*check if the two rows should switch place,
+                based on the direction, asc or desc:*/
+                if (dir == "asc") {
+                    if (x.innerHTML.toLowerCase() > y.innerHTML.toLowerCase()) {
+                        //if so, mark as a switch and break the loop:
+                        shouldSwitch = true;
+                        break;
+                    }
+                } else if (dir == "desc") {
+                    if (x.innerHTML.toLowerCase() < y.innerHTML.toLowerCase()) {
+                        //if so, mark as a switch and break the loop:
+                        shouldSwitch = true;
+                        break;
+                    }
+                }
+            }
+            if (shouldSwitch) {
+                /*If a switch has been marked, make the switch
+                and mark that a switch has been done:*/
+                rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
+                switching = true;
+                //Each time a switch is done, increase this count by 1:
+                switchcount++;
+            } else {
+                /*If no switching has been done AND the direction is "asc",
+                set the direction to "desc" and run the while loop again.*/
+                if (switchcount == 0 && dir == "asc") {
+                    dir = "desc";
+                    switching = true;
+                }
+            }
+        }
+    }
+</script>
+<script type="text/javascript">  
+    function Call(id) {
+        alert(id);
+        $("#ModalEdit").modal("show");
+    }
+</script>

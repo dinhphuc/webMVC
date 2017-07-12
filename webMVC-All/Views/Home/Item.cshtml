@@ -1,0 +1,38 @@
+﻿@using webMVC_All.Models
+@{
+    Item IT = (Item)ViewData["Item"];
+}
+
+@{
+    ViewBag.Title = "Thông tin - " + @IT.NameItem;
+    Layout = "~/Views/Shared/_Home.cshtml";
+}
+
+
+<link href="~/Content/StyleIT.css" rel="stylesheet" />
+
+<div class="text-content">
+    <a href="/Home/Item?id=@IT.ItemID">
+        <h2> @IT.NameItem </h2>
+    </a>
+</div>
+
+<div class="item-content">
+    <div class="img-item-content">
+
+        <img src="@IT.LinkImg" /> 
+    </div>
+    <div class="Information-buy-item">
+        <div style="text-align:center;color:red"><h3> Mua Hàng </h3></div>
+        <div style="text-align:center;margin: 2px">Đặt hàng - điền thông tin khách hàng</div>
+
+        <!-- đăng kí hông Tin-->
+     
+
+     
+        <!-- End Thông Tin-->
+
+    </div>
+</div>
+
+

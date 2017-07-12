@@ -1,0 +1,100 @@
+﻿.item-content {
+    width: 940px;
+    margin: 2px 2px 2px 2px;
+    height: 350px;
+}
+
+.text-content {
+    width: 940px;
+    margin: 2px 2px 2px 2px;
+    height: 25px;
+    text-align: center;
+}
+
+    .text-content a {
+        text-decoration: none;
+    }
+
+.img-item-content {
+    float: left;
+    width: 398px;
+    margin: 2px 2px 2px 2px;
+    text-align: center;
+    height: 350px;
+    border: solid 1px;
+}
+
+.img-item-content img{
+    margin: 15px auto;
+    text-align: center;
+
+}
+.img-item-content img:hover{
+    color: #8fde62;
+}
+.Information-buy-item {
+    float: right;
+    width: 534px;
+    text-align: center;
+    border: solid 1px;
+    height: 350px;
+}
+
+.pd-form {
+    padding: 13px 15px;
+}
+
+    .pd-form ul li {
+        position: relative;
+        padding: 7px 0;
+    }
+
+        .pd-form ul li > label {
+            float: left;
+            margin:5px;
+            width: 120px;
+            padding-top: 6px;
+            color: #3d3d3d;
+            font-size: 14px;
+            font-weight: bold;
+        }
+
+            .pd-form ul li > label sup {
+                color: #c30016;
+                font-weight: bold;
+            }
+
+        .pd-form ul li > div {
+            display: block;
+            margin-left: 120px;
+            position: relative;
+            text-align: left;
+        }
+
+            .pd-form ul li > div > input.form-control {
+                height: 25px;
+            }
+
+            .pd-form ul li > div > .error {
+                font-size: 12px;
+                color: #d31212;
+            }
+
+            .pd-form ul li > div > input.error {
+                border: 1px solid #d31212;
+            }
+
+
+
+
+/*pt*/
+.price {
+
+}
+.btn-submit-order{
+    text-align:center;
+}
+.price-item
+{
+    font-size:15px;
+}

@@ -1,0 +1,110 @@
+c:\users\sunfl\documents\visual studio 2013\Projects\webMVC-All\webMVC-All\bin\webMVC-All.dll.config
+c:\users\sunfl\documents\visual studio 2013\Projects\webMVC-All\webMVC-All\bin\webMVC-All.dll
+c:\users\sunfl\documents\visual studio 2013\Projects\webMVC-All\webMVC-All\bin\webMVC-All.pdb
+c:\users\sunfl\documents\visual studio 2013\Projects\webMVC-All\webMVC-All\bin\Antlr3.Runtime.dll
+c:\users\sunfl\documents\visual studio 2013\Projects\webMVC-All\webMVC-All\bin\EntityFramework.dll
+c:\users\sunfl\documents\visual studio 2013\Projects\webMVC-All\webMVC-All\bin\EntityFramework.SqlServer.dll
+c:\users\sunfl\documents\visual studio 2013\Projects\webMVC-All\webMVC-All\bin\Microsoft.AspNet.Identity.Core.dll
+c:\users\sunfl\documents\visual studio 2013\Projects\webMVC-All\webMVC-All\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+c:\users\sunfl\documents\visual studio 2013\Projects\webMVC-All\webMVC-All\bin\Microsoft.AspNet.Identity.Owin.dll
+c:\users\sunfl\documents\visual studio 2013\Projects\webMVC-All\webMVC-All\bin\Microsoft.Owin.dll
+c:\users\sunfl\documents\visual studio 2013\Projects\webMVC-All\webMVC-All\bin\Microsoft.Owin.Host.SystemWeb.dll
+c:\users\sunfl\documents\visual studio 2013\Projects\webMVC-All\webMVC-All\bin\Microsoft.Owin.Security.Cookies.dll
+c:\users\sunfl\documents\visual studio 2013\Projects\webMVC-All\webMVC-All\bin\Microsoft.Owin.Security.dll
+c:\users\sunfl\documents\visual studio 2013\Projects\webMVC-All\webMVC-All\bin\Microsoft.Owin.Security.Facebook.dll
+c:\users\sunfl\documents\visual studio 2013\Projects\webMVC-All\webMVC-All\bin\Microsoft.Owin.Security.Google.dll
+c:\users\sunfl\documents\visual studio 2013\Projects\webMVC-All\webMVC-All\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+c:\users\sunfl\documents\visual studio 2013\Projects\webMVC-All\webMVC-All\bin\Microsoft.Owin.Security.OAuth.dll
+c:\users\sunfl\documents\visual studio 2013\Projects\webMVC-All\webMVC-All\bin\Microsoft.Owin.Security.Twitter.dll
+c:\users\sunfl\documents\visual studio 2013\Projects\webMVC-All\webMVC-All\bin\Microsoft.Web.Infrastructure.dll
+c:\users\sunfl\documents\visual studio 2013\Projects\webMVC-All\webMVC-All\bin\Newtonsoft.Json.dll
+c:\users\sunfl\documents\visual studio 2013\Projects\webMVC-All\webMVC-All\bin\Owin.dll
+c:\users\sunfl\documents\visual studio 2013\Projects\webMVC-All\webMVC-All\bin\System.Web.Helpers.dll
+c:\users\sunfl\documents\visual studio 2013\Projects\webMVC-All\webMVC-All\bin\System.Web.Mvc.dll
+c:\users\sunfl\documents\visual studio 2013\Projects\webMVC-All\webMVC-All\bin\System.Web.Optimization.dll
+c:\users\sunfl\documents\visual studio 2013\Projects\webMVC-All\webMVC-All\bin\System.Web.Razor.dll
+c:\users\sunfl\documents\visual studio 2013\Projects\webMVC-All\webMVC-All\bin\System.Web.WebPages.Deployment.dll
+c:\users\sunfl\documents\visual studio 2013\Projects\webMVC-All\webMVC-All\bin\System.Web.WebPages.dll
+c:\users\sunfl\documents\visual studio 2013\Projects\webMVC-All\webMVC-All\bin\System.Web.WebPages.Razor.dll
+c:\users\sunfl\documents\visual studio 2013\Projects\webMVC-All\webMVC-All\bin\WebGrease.dll
+c:\users\sunfl\documents\visual studio 2013\Projects\webMVC-All\webMVC-All\bin\System.Web.Helpers.xml
+c:\users\sunfl\documents\visual studio 2013\Projects\webMVC-All\webMVC-All\bin\System.Web.Mvc.xml
+c:\users\sunfl\documents\visual studio 2013\Projects\webMVC-All\webMVC-All\bin\System.Web.Optimization.xml
+c:\users\sunfl\documents\visual studio 2013\Projects\webMVC-All\webMVC-All\bin\System.Web.Razor.xml
+c:\users\sunfl\documents\visual studio 2013\Projects\webMVC-All\webMVC-All\bin\System.Web.WebPages.xml
+c:\users\sunfl\documents\visual studio 2013\Projects\webMVC-All\webMVC-All\bin\System.Web.WebPages.Deployment.xml
+c:\users\sunfl\documents\visual studio 2013\Projects\webMVC-All\webMVC-All\bin\System.Web.WebPages.Razor.xml
+c:\users\sunfl\documents\visual studio 2013\Projects\webMVC-All\webMVC-All\bin\Newtonsoft.Json.xml
+c:\users\sunfl\documents\visual studio 2013\Projects\webMVC-All\webMVC-All\bin\Antlr3.Runtime.pdb
+c:\users\sunfl\documents\visual studio 2013\Projects\webMVC-All\webMVC-All\bin\EntityFramework.xml
+c:\users\sunfl\documents\visual studio 2013\Projects\webMVC-All\webMVC-All\bin\EntityFramework.SqlServer.xml
+c:\users\sunfl\documents\visual studio 2013\Projects\webMVC-All\webMVC-All\bin\Microsoft.AspNet.Identity.Core.xml
+c:\users\sunfl\documents\visual studio 2013\Projects\webMVC-All\webMVC-All\bin\Microsoft.AspNet.Identity.Owin.xml
+c:\users\sunfl\documents\visual studio 2013\Projects\webMVC-All\webMVC-All\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+c:\users\sunfl\documents\visual studio 2013\Projects\webMVC-All\webMVC-All\bin\Microsoft.Owin.xml
+c:\users\sunfl\documents\visual studio 2013\Projects\webMVC-All\webMVC-All\bin\Microsoft.Owin.Host.SystemWeb.xml
+c:\users\sunfl\documents\visual studio 2013\Projects\webMVC-All\webMVC-All\bin\Microsoft.Owin.Security.xml
+c:\users\sunfl\documents\visual studio 2013\Projects\webMVC-All\webMVC-All\bin\Microsoft.Owin.Security.Facebook.xml
+c:\users\sunfl\documents\visual studio 2013\Projects\webMVC-All\webMVC-All\bin\Microsoft.Owin.Security.Cookies.xml
+c:\users\sunfl\documents\visual studio 2013\Projects\webMVC-All\webMVC-All\bin\Microsoft.Owin.Security.OAuth.xml
+c:\users\sunfl\documents\visual studio 2013\Projects\webMVC-All\webMVC-All\bin\Microsoft.Owin.Security.Google.xml
+c:\users\sunfl\documents\visual studio 2013\Projects\webMVC-All\webMVC-All\bin\Microsoft.Owin.Security.Twitter.xml
+c:\users\sunfl\documents\visual studio 2013\Projects\webMVC-All\webMVC-All\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+c:\users\sunfl\documents\visual studio 2013\Projects\webMVC-All\webMVC-All\obj\Debug\webMVC-All.csprojResolveAssemblyReference.cache
+c:\users\sunfl\documents\visual studio 2013\Projects\webMVC-All\webMVC-All\obj\Debug\webMVC-All.dll
+c:\users\sunfl\documents\visual studio 2013\Projects\webMVC-All\webMVC-All\obj\Debug\webMVC-All.pdb
+D:\_Tài Liệu\Code\Web\webMVC-All\webMVC-All\bin\webMVC-All.dll.config
+D:\_Tài Liệu\Code\Web\webMVC-All\webMVC-All\bin\webMVC-All.dll
+D:\_Tài Liệu\Code\Web\webMVC-All\webMVC-All\bin\webMVC-All.pdb
+D:\_Tài Liệu\Code\Web\webMVC-All\webMVC-All\bin\Antlr3.Runtime.dll
+D:\_Tài Liệu\Code\Web\webMVC-All\webMVC-All\bin\EntityFramework.dll
+D:\_Tài Liệu\Code\Web\webMVC-All\webMVC-All\bin\EntityFramework.SqlServer.dll
+D:\_Tài Liệu\Code\Web\webMVC-All\webMVC-All\bin\Microsoft.AspNet.Identity.Core.dll
+D:\_Tài Liệu\Code\Web\webMVC-All\webMVC-All\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+D:\_Tài Liệu\Code\Web\webMVC-All\webMVC-All\bin\Microsoft.AspNet.Identity.Owin.dll
+D:\_Tài Liệu\Code\Web\webMVC-All\webMVC-All\bin\Microsoft.Owin.dll
+D:\_Tài Liệu\Code\Web\webMVC-All\webMVC-All\bin\Microsoft.Owin.Host.SystemWeb.dll
+D:\_Tài Liệu\Code\Web\webMVC-All\webMVC-All\bin\Microsoft.Owin.Security.Cookies.dll
+D:\_Tài Liệu\Code\Web\webMVC-All\webMVC-All\bin\Microsoft.Owin.Security.dll
+D:\_Tài Liệu\Code\Web\webMVC-All\webMVC-All\bin\Microsoft.Owin.Security.Facebook.dll
+D:\_Tài Liệu\Code\Web\webMVC-All\webMVC-All\bin\Microsoft.Owin.Security.Google.dll
+D:\_Tài Liệu\Code\Web\webMVC-All\webMVC-All\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+D:\_Tài Liệu\Code\Web\webMVC-All\webMVC-All\bin\Microsoft.Owin.Security.OAuth.dll
+D:\_Tài Liệu\Code\Web\webMVC-All\webMVC-All\bin\Microsoft.Owin.Security.Twitter.dll
+D:\_Tài Liệu\Code\Web\webMVC-All\webMVC-All\bin\Microsoft.Web.Infrastructure.dll
+D:\_Tài Liệu\Code\Web\webMVC-All\webMVC-All\bin\Newtonsoft.Json.dll
+D:\_Tài Liệu\Code\Web\webMVC-All\webMVC-All\bin\Owin.dll
+D:\_Tài Liệu\Code\Web\webMVC-All\webMVC-All\bin\System.Web.Helpers.dll
+D:\_Tài Liệu\Code\Web\webMVC-All\webMVC-All\bin\System.Web.Mvc.dll
+D:\_Tài Liệu\Code\Web\webMVC-All\webMVC-All\bin\System.Web.Optimization.dll
+D:\_Tài Liệu\Code\Web\webMVC-All\webMVC-All\bin\System.Web.Razor.dll
+D:\_Tài Liệu\Code\Web\webMVC-All\webMVC-All\bin\System.Web.WebPages.Deployment.dll
+D:\_Tài Liệu\Code\Web\webMVC-All\webMVC-All\bin\System.Web.WebPages.dll
+D:\_Tài Liệu\Code\Web\webMVC-All\webMVC-All\bin\System.Web.WebPages.Razor.dll
+D:\_Tài Liệu\Code\Web\webMVC-All\webMVC-All\bin\WebGrease.dll
+D:\_Tài Liệu\Code\Web\webMVC-All\webMVC-All\bin\System.Web.Helpers.xml
+D:\_Tài Liệu\Code\Web\webMVC-All\webMVC-All\bin\System.Web.Mvc.xml
+D:\_Tài Liệu\Code\Web\webMVC-All\webMVC-All\bin\System.Web.Optimization.xml
+D:\_Tài Liệu\Code\Web\webMVC-All\webMVC-All\bin\System.Web.Razor.xml
+D:\_Tài Liệu\Code\Web\webMVC-All\webMVC-All\bin\System.Web.WebPages.xml
+D:\_Tài Liệu\Code\Web\webMVC-All\webMVC-All\bin\System.Web.WebPages.Deployment.xml
+D:\_Tài Liệu\Code\Web\webMVC-All\webMVC-All\bin\System.Web.WebPages.Razor.xml
+D:\_Tài Liệu\Code\Web\webMVC-All\webMVC-All\bin\Newtonsoft.Json.xml
+D:\_Tài Liệu\Code\Web\webMVC-All\webMVC-All\bin\Antlr3.Runtime.pdb
+D:\_Tài Liệu\Code\Web\webMVC-All\webMVC-All\bin\EntityFramework.xml
+D:\_Tài Liệu\Code\Web\webMVC-All\webMVC-All\bin\EntityFramework.SqlServer.xml
+D:\_Tài Liệu\Code\Web\webMVC-All\webMVC-All\bin\Microsoft.AspNet.Identity.Core.xml
+D:\_Tài Liệu\Code\Web\webMVC-All\webMVC-All\bin\Microsoft.AspNet.Identity.Owin.xml
+D:\_Tài Liệu\Code\Web\webMVC-All\webMVC-All\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+D:\_Tài Liệu\Code\Web\webMVC-All\webMVC-All\bin\Microsoft.Owin.xml
+D:\_Tài Liệu\Code\Web\webMVC-All\webMVC-All\bin\Microsoft.Owin.Host.SystemWeb.xml
+D:\_Tài Liệu\Code\Web\webMVC-All\webMVC-All\bin\Microsoft.Owin.Security.xml
+D:\_Tài Liệu\Code\Web\webMVC-All\webMVC-All\bin\Microsoft.Owin.Security.Facebook.xml
+D:\_Tài Liệu\Code\Web\webMVC-All\webMVC-All\bin\Microsoft.Owin.Security.Cookies.xml
+D:\_Tài Liệu\Code\Web\webMVC-All\webMVC-All\bin\Microsoft.Owin.Security.OAuth.xml
+D:\_Tài Liệu\Code\Web\webMVC-All\webMVC-All\bin\Microsoft.Owin.Security.Google.xml
+D:\_Tài Liệu\Code\Web\webMVC-All\webMVC-All\bin\Microsoft.Owin.Security.Twitter.xml
+D:\_Tài Liệu\Code\Web\webMVC-All\webMVC-All\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+D:\_Tài Liệu\Code\Web\webMVC-All\webMVC-All\obj\Debug\webMVC-All.csprojResolveAssemblyReference.cache
+D:\_Tài Liệu\Code\Web\webMVC-All\webMVC-All\obj\Debug\webMVC-All.dll
+D:\_Tài Liệu\Code\Web\webMVC-All\webMVC-All\obj\Debug\webMVC-All.pdb
